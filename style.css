@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+/* Primary  */
+
+    --pale_blue: hsl(225, 100%, 94%);
+    --bright_blue: hsl(245, 75%, 52%);
+
+/*- Neutral  */
+
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --dark_blue: hsl(223, 47%, 23%);
+
+}
+
+ body{
+    background-color: var(--pale_blue);
+    background-image: url(/resources/images/pattern-background-desktop.svg);
+
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px ;
+
+
+    
+}
+
+
+.card{
+   
+    background-color: white;
+    color: var(--desaturated_blue);
+    width: 450px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+    
+
+}
+
+.title{
+    color: var(--dark_blue);
+    font-weight: 900;
+    font-size: 32px;
+
+  
+}
+
+.hero_img{
+    width: 100%;
+}
+
+.container{
+    padding: 30px;
+    margin: 13px 0;
+}
+
+    
+
+.desc{
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.proceed_btn{
+    background-color: var(--bright_blue);
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor:pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0s;
+}
+
+.proceed_btn:hover {
+    background-color: rgb(0, 255, 213) ;
+    box-shadow: 0px 15px 20px rgba(6, 238, 255, 0.313);
+    transform: translateY(-7px);
+
+}
+
+.cancel_btn{
+    padding: 10px;
+    font-weight: 700;
+    color: var(--desaturated_blue);
+    border:none;
+    background: none;
+    cursor:pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.cancel_btn:hover{
+    transform: translateY(-7px);
+    color:black;
+}
+
+.plan_container {
+    background-color: var(--very_pale_blue);
+    border-radius: 10px;
+    padding:18px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h3{
+    color: var(--dark_blue);
+}
+
+.plan_container a{
+    margin-left: 100px;
+    margin-top: 10px;
+}
